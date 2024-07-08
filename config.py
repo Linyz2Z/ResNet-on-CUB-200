@@ -4,12 +4,12 @@ __all__ = ["resnet18", "resnet34", "resnet50", "resnet101", "resnet152","resnext
            "vit_b_16","vit_b_32","vit_l_16","vit_l_32","vit_h_14"]
 
 NET_NAME = 'resnext101_32x8d'
-# DATASET = 'CUB_200'
-DATASET = 'Stanford_Dogs'
+DATASET = 'CUB_200'
+# DATASET = 'Stanford_Dogs'
 VERSION = 'v3.0'
 DEVICE = '1'
 # Must be True when pre-training and inference
-PRE_TRAINED = True
+PRE_TRAINED = False
 # 1,2,3,4,5
 CURRENT_FOLD = 1                    # 当前进行训练或验证的折数，通常用于k折交叉验证中
 GPU_NUM = len(DEVICE.split(','))    
